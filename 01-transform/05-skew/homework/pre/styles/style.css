@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted.svg);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.wrapper {
+  display: flex;
+  gap: 50px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 3px solid;
+}
+
+.one {
+  background-color: #feafe8;
+  /* Примените к элементу skew(-10deg) */
+}
+
+.two {
+  background-color: #fd24af;
+  /* Примените к элементу skew(-10deg, 20deg) */
+}
+
+.horizontal {
+  background-color: #ffc802;
+  /* Примените к элементу skewX(10deg) */
+}
+
+.vertical {
+  background-color: #80d994;
+  /* Примените к элементу skewY(10deg) */
+}
