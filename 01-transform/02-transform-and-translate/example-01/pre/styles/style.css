@@ -27,5 +27,5 @@ body {
 }
 
 .card:hover {
-  transform: translateY(-20%);
+  transform: translate(-25px, -25px);
 }
