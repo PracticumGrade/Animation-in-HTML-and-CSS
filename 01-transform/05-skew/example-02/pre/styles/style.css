@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  border-radius: 15px;
+  outline: 2px solid red;
+  padding: 5px;
+}
+
+.card {
+  height: 200px;
+  border-radius: 15px;
+  outline: 1px solid black;
+  background-color: red;
+  background-image: url(../images/back.jpg);
+  background-position: -2px -6px;
+  background-size: 104%;
+  aspect-ratio: 1/1.5;
+}
+
+.card:hover {
+  transform: skew(15deg);
+}
