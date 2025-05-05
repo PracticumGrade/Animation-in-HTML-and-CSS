@@ -127,7 +127,7 @@ body {
 .dial__hand {
   position: absolute;
 
-  /* Почините ось вращения часовых стрелок при помощи свойства transform-origin */
+  /* Переместите точку трансформации в конец оси Y */
   inset-inline-start: 50%;
   inset-block-start: 50%;
   translate: -50% -100%;
