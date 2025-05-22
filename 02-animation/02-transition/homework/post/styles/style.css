@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  text-size-adjust: 100%;
+  background-color: #000;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted.svg);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  min-block-size: 100dvb;
+  padding: 1em;
+}
+
+.quote {
+  margin: 0;
+  border: 5px solid;
+  border-image: conic-gradient(from 0, #feafe8, #fd24af, #ffc802, #80d994, #6dc1fd, #5f0dee, #feafe8) 1;
+  padding: 0.75em 1.5em;
+  font-weight: 800;
+  font-size: clamp(1.25rem, 0.0714rem + 5.2381vw, 4rem);
+  text-transform: uppercase;
+}
+
+.quote__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+  font-weight: 800;
+  font-size: inherit;
+}
+
+.quote__icon {
+  inline-size: 0.84em;
+  fill: #fff;
+  transition: fill 0.5s;
+}
+
+.quote__icon:hover {
+  fill: #f00;
+  cursor: pointer;
+}
