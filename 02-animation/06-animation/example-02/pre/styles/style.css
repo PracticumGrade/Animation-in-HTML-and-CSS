@@ -19,7 +19,8 @@ body {
   border: 10px solid #feafe8;
   border-radius: 50%;
   border-block-start-color: #fd24af;
-  animation: loading 1.5s, color 1.5s;
+  animation-name: loading, color;
+  animation-duration: 1.5s;
   inline-size: 100px;
   aspect-ratio: 1/1;
 }
@@ -35,13 +36,18 @@ body {
 }
 
 @keyframes color {
-  from {
+  0% {
     border-color: #feafe8;
     border-block-start-color: #fd24af;
   }
 
-  to {
-    border-color: #ffc9a9;
-    border-block-start-color: #ff7e5f;
+  50% {
+    border-color: #ffd6e8;
+    border-block-start-color: #c471ed;
+  }
+
+  100% {
+    border-color: #feafe8;
+    border-block-start-color: #fd24af;
   }
 }
