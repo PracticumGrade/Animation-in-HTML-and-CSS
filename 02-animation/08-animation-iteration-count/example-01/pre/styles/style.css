@@ -21,6 +21,7 @@ body {
   border-block-start-color: #fd24af;
   animation-name: loading, color;
   animation-duration: 1.5s, 1.5s;
+  animation-delay: 2s;
   animation-iteration-count: infinite;
   inline-size: 100px;
   aspect-ratio: 1/1;
