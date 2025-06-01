@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  block-size: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  block-size: 100%;
+}
+
+.loader {
+  border: 10px solid #feafe8;
+  border-radius: 50%;
+  border-block-start-color: #fd24af;
+  animation: loading 1.5s, color 1.5s;
+  inline-size: 100px;
+  aspect-ratio: 1/1;
+}
+
+@keyframes loading {
+  from {
+    rotate: 0deg;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
+@keyframes color {
+  from {
+    border-color: #feafe8;
+    border-block-start-color: #fd24af;
+  }
+
+  to {
+    border-color: #ffc9a9;
+    border-block-start-color: #ff7e5f;
+  }
+}
