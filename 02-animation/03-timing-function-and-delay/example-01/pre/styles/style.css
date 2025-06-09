@@ -1,0 +1,45 @@
+html {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  min-width: 500px;
+  min-height: 100%;
+  margin: 0;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted.svg);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.ball-box {
+  border: 1px solid #000;
+  padding-inline-start: 0;
+  transition-property: padding;
+  transition-duration: .5s;
+  cursor: pointer;
+}
+
+.ball {
+  display: block;
+  width: 100px;
+  height: 100px;
+  pointer-events: none;
+}
+
+.ball-box.active {
+  border-color: #5f0dee;
+  padding-inline-start: calc(100% - 100px);
+}
+
+.ball-box:has(.delay) {
+  transition-delay: .5s;
+}
