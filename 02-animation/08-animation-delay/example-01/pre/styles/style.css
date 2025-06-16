@@ -22,7 +22,6 @@ body {
   animation-name: loading, color;
   animation-duration: 1.5s, 1.5s;
   animation-delay: 1s;
-  animation-iteration-count: infinite;
   inline-size: 100px;
   aspect-ratio: 1/1;
 }
