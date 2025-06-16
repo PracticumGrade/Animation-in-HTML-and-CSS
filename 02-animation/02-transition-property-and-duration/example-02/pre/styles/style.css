@@ -26,7 +26,8 @@ body {
 
 .link:hover {
   color: #fd24af;
-  transition: color 0.5s;
+  transition-property: color;
+  transition-duration: .5s;
 }
 
 .link-nice::after {
