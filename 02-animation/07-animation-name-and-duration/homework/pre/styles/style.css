@@ -18,7 +18,7 @@ body {
   position: relative;
   border-top-left-radius: 125px;
   border-top-right-radius: 125px;
-  /* Задайте имя анимации rainbow и длительность анимацию 10 секунд */
+  /* Задайте имя анимации rainbow и длительность анимации 10 секунд */
   inline-size: 250px;
   aspect-ratio: 2/1;
 }
