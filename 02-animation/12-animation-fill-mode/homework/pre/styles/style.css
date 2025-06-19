@@ -24,7 +24,7 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: steps(1, jump-start);
   animation-direction: alternate;
-  /* Сделайте так, чтобы до начала анимации к жабке применялся первый ключевой кадр. */
+  /* Сделайте так, чтобы до начала анимации к жабке применялся первый ключевой кадр */
   inline-size: 250px;
   aspect-ratio: 2/1;
 }
