@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+  block-size: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  block-size: 100%;
+}
+
+.frog {
+  position: relative;
+  border-top-left-radius: 125px;
+  border-top-right-radius: 125px;
+  animation: rainbow 10s 2s infinite steps(1, jump-start) alternate both paused;
+  /* Напишите свойство will-change со значением background-color */
+  inline-size: 250px;
+  aspect-ratio: 2/1;
+}
+
+.frog:hover {
+  animation-play-state: running;
+}
+
+.frog::before {
+  content: '';
+  position: absolute;
+  top: -125px;
+  left: 35px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: inherit;
+  aspect-ratio: 1/2;
+}
+
+.frog::after {
+  content: '';
+  position: absolute;
+  top: -125px;
+  right: 35px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: inherit;
+  aspect-ratio: 1/2;
+}
+
+@keyframes rainbow {
+  0% {
+    background-color: crimson;
+  }
+
+  16.6% {
+    background-color: orangered;
+  }
+
+  33.2% {
+    background-color: gold;
+  }
+
+  49.8% {
+    background-color: forestgreen;
+  }
+
+  66.4% {
+    background-color: cyan;
+  }
+
+  83% {
+    background-color: mediumblue;
+  }
+
+  100% {
+    background-color: blueviolet;
+  }
+}
