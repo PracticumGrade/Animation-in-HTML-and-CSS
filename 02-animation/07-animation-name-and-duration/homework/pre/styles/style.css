@@ -18,7 +18,7 @@ body {
   position: relative;
   border-top-left-radius: 125px;
   border-top-right-radius: 125px;
-  /* Задайте в качестве имени анимации набор ключевых кадров и длительность анимации 10 секунд */
+  /* Задайте в качестве имени анимации набор ключевых кадров rainbow и длительность анимации 10 секунд */
   inline-size: 250px;
   aspect-ratio: 2/1;
 }
