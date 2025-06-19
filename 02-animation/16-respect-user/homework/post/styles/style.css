@@ -18,13 +18,13 @@ body {
   position: relative;
   border-top-left-radius: 125px;
   border-top-right-radius: 125px;
+  animation: rainbow 10s 2s infinite steps(1, jump-start) alternate both paused;
   inline-size: 250px;
   aspect-ratio: 2/1;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .frog {
-    animation: rainbow 10s 2s infinite steps(1, jump-start) alternate both paused;
     will-change: background-color;
   }
 
