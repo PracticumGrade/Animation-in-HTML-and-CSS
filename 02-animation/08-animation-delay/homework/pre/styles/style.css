@@ -20,7 +20,7 @@ body {
   border-top-right-radius: 125px;
   animation-name: rainbow;
   animation-duration: 10s;
-  /* Задайте задержку анимации 2 секунды */
+  /* Задайте задержку анимации длительностью 2 секунды */
   inline-size: 250px;
   aspect-ratio: 2/1;
 }
