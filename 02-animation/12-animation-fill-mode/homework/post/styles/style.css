@@ -23,10 +23,8 @@ body {
   animation-delay: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: steps(1, jump-start);
-  /*
-    Сделайте так, чтобы каждый нечётный повтор анимации жабки воспроизводился от первого ключевого кадра к последнему,
-    а каждый чётный — от последнего ключевого кадра к первому
-  */
+  animation-direction: alternate;
+  animation-fill-mode: both;
   inline-size: 250px;
   aspect-ratio: 2/1;
 }
