@@ -19,7 +19,7 @@ body {
   border-top-left-radius: 125px;
   border-top-right-radius: 125px;
   animation-name: rainbow;
-  animation-duration: 7s;
+  animation-duration: 10s;
   animation-delay: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: steps(1, jump-start);
