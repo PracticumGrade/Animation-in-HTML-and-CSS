@@ -29,12 +29,14 @@ body {
 .scene__image_type_first-plan {
   inset: 0;
   background-image: url(../images/earth.png);
+  /* Добавьте переход для свойства scale длительностью 700 миллисекунд и вид перехода ease-out */
 }
 
 .scene__image_type_second-plan {
   inset: -20px;
   z-index: -1;
   background-image: url(../images/mountains.png);
+  /* Добавьте переход для свойства scale длительностью 700 миллисекунд и вид перехода ease-out */
 }
 
 .scene__image_type_moon {
@@ -44,6 +46,12 @@ body {
   border-radius: 50%;
   box-shadow: 0 0 130px 0 #fff;
   background-image: url(../images/moon.png);
+  /*
+    Удалите свойство rotate.
+
+    Добавьте анимацию набора ключевых кадров moon, длительностью 25 секунд,
+    задайте вид анимации linear и сделайте так, чтобы анимация повторялась бесконечно
+  */
   rotate: .5turn;
   inset-block-start: 8%;
   aspect-ratio: 1 / 1;
@@ -75,6 +83,7 @@ body {
 
 .content__button:is(:hover, :focus-visible) {
   color: #fff;
+  /* Добавьте переход для свойства border-color длительностью 300 миллисекунд */
 }
 
 .content__button::before,
@@ -86,6 +95,7 @@ body {
   block-size: 100%;
   background-color: #fff;
   transform: skewX(30deg);
+  /* Добавьте переход для свойств inset-block-start, inset-inline-start и transform длительностью 700 миллисекунд */
 }
 
 .content__button::before {
@@ -109,6 +119,8 @@ body {
   inset-inline-start: 0;
   inset-block-start: 0;
 }
+
+/* Напишите набор кадров moon, в котором элемент будет делать 1 поворот по часовой стрелке */
 
 .content:has(.content__button:is(:hover, :focus-visible)) :is(.scene__image_type_first-plan) {
   scale: 1.05;
