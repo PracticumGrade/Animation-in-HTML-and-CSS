@@ -64,7 +64,7 @@ html {
 }
 
 .menu__item:hover {
-  rotate: x 360deg;
+  transform: rotateX(360deg);
 }
 
 .menu__link {

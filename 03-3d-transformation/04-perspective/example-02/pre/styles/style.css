@@ -65,7 +65,7 @@ html {
 
 .menu__item:hover {
   perspective: 200px;
-  rotate: x 360deg;
+  transform: rotateX(360deg);
 }
 
 .menu__link {
