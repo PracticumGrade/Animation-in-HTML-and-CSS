@@ -60,7 +60,7 @@ html {
 }
 
 .menu__item {
-  transition: transform 2s ease;
+  transition: transform 5s ease;
 }
 
 .menu__item:hover {
