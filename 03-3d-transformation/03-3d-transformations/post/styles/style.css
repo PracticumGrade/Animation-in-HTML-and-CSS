@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted.svg);
+}
+
+.container {
+  width: 100%;
+}
+
+.view {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 60vh;
+  padding: 60px;
+  background-color: #80d994;
+}
+
+.demo-pic {
+  position: relative;
+  width: 200px;
+  transition: transform 0.5s linear;
+  transform:
+    scale3d(1.5, 0.8, 1)
+    translateX(-50px)
+    translateY(-50px)
+    rotateX(25deg) rotateY(40deg) rotateZ(-15deg);
+}

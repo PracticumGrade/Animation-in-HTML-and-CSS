@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted.svg);
+}
+
+.container {
+  width: 100%;
+}
+
+.view {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 60vh;
+  padding: 60px;
+  background-color: #80d994;
+}
+
+.demo-pic {
+  position: relative;
+  width: 200px;
+  transition: transform 0.5s linear;
+  /*
+    Примените 3D-трансформации к элементу:
+      - По оси X увеличьте элемент на `50%`, по оси Y  — уменьшите на `20%`, а ось Z — оставьте как есть;
+      - Сместите элемент по осям X и Y на `-50px`;
+      - Поверните элемент по оси X на 25 градусов, по оси Y  — на 40, а по оси Z — на -15.
+  */
+}
