@@ -59,6 +59,7 @@ html {
   text-align: center;
   list-style: none;
   perspective: 200px;
+  /* Задайте точку перспективы: по оси X — calc(100% - 20px), а по оси Y — просто 20px. */
 }
 
 .menu__item {
