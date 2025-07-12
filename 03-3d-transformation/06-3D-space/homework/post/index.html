@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cube</title>
+    <link
+      rel="stylesheet"
+      href="https://code.s3.yandex.net/web-code/fonts/fonts.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/cube.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="controls">
+        <label>
+          <span>Угол поворота</span>
+          <input
+            class="range"
+            name="cube-rotate-angle"
+            type="range"
+            min="-360"
+            max="360"
+            step="1"
+          />
+        </label>
+      </form>
+      <div class="view">
+        <div class="cube">
+          <div class="side top"></div>
+          <div class="side right"></div>
+          <div class="side bottom"></div>
+          <div class="side left"></div>
+          <div class="side front"></div>
+          <div class="side back"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

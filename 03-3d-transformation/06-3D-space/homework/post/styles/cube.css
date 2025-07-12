@@ -1,0 +1,84 @@
+.cube {
+  --size: 300px;
+  --vec-x: 700;
+  --vec-y: 1000;
+  --vec-z: 500;
+  --cube-rotate-angle: 60deg;
+
+  width: var(--size);
+  height: var(--size);
+  transform:
+    rotate3d(
+      var(--vec-x),
+      var(--vec-y),
+      var(--vec-z),
+      var(--cube-rotate-angle)
+    );
+  transform-origin:
+    calc(var(--size) / 2) calc(var(--size) / 2)
+    calc(-1 * var(--size) / 2);
+  transform-style: preserve-3d;
+}
+
+.side {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: var(--size);
+  height: var(--size);
+}
+
+.top {
+  background-color: rgb(253 36 175 / 0.5);
+  transform: rotateX(-90deg) rotateY(180deg);
+  transform-origin: center top;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+}
+
+.right {
+  background-color: rgb(254 175 232 / 0.5);
+  transform: rotateY(-90deg) rotateX(180deg) rotateZ(180deg) translateX(100%);
+  transform-origin: right center;
+  inset-block-start: 0;
+  inset-inline-end: 0;
+}
+
+.bottom {
+  background-color: rgb(255 200 2 / 0.5);
+  transform: rotateX(90deg) rotateY(180deg);
+  transform-origin: center bottom;
+  inset-block-end: 0;
+  inset-inline-start: 0;
+}
+
+.left {
+  background-color: rgb(128 217 148 / 0.5);
+  transform: rotateY(90deg) rotateX(180deg);
+  transform-origin: left center;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+}
+
+.front {
+  background-color: rgb(95 13 238 / 0.5);
+  inset-block-start: 0;
+  inset-inline-start: 0;
+}
+
+.back {
+  background-color: rgb(109 193 253 / 0.5);
+  transform: translateZ(calc(-1 * var(--size))) rotateY(180deg);
+  inset-block-start: 0;
+  inset-inline-start: 0;
+}
+
+.axises {
+  position: absolute;
+  transform: translate3d(-50%, -50%, calc(-1 * var(--size) / 2));
+  transform-style: preserve-3d;
+  inline-size: calc(var(--size) / 10);
+  block-size: calc(var(--size) / 10);
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+}
