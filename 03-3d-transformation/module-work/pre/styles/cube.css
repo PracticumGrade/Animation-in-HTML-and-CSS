@@ -1,0 +1,58 @@
+.cube {
+  --size: 300px;
+  --vec-x: 700;
+  --vec-y: 1000;
+  --vec-z: 500;
+  --cube-rotate-angle: 60deg;
+
+  width: var(--size);
+  height: var(--size);
+  transform:
+    rotate3d(
+      var(--vec-x),
+      var(--vec-y),
+      var(--vec-z),
+      var(--cube-rotate-angle)
+    );
+  /* Расположите точку трансформации прямо в центре куба */
+  /* Создайте 3D-пространство внутри куба */
+}
+
+.side {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: var(--size);
+  height: var(--size);
+}
+
+.top {
+  background-color: rgb(253 36 175 / 0.5);
+  /* Поверните элемент на -90 градусов по оси X и на 180 градусов по оси Y */
+  /* Переместите точку трансформации в центр по оси X и верхнюю часть по оси Y */
+}
+
+.right {
+  background-color: rgb(254 175 232 / 0.5);
+  /* Поверните элемент на -90 градусов по оси Y, 180 градусов по осям X и Z и сдвиньте элемент по оси X на 100% */
+  /* Переместите точку трансформации в правый край по оси X и в центр по оси Y */
+}
+
+.bottom {
+  background-color: rgb(255 200 2 / 0.5);
+  /* Правильно расположите сторону куба */
+}
+
+.left {
+  background-color: rgb(128 217 148 / 0.5);
+  /* Правильно расположите сторону куба */
+}
+
+.front {
+  background-color: rgb(95 13 238 / 0.5);
+}
+
+.back {
+  background-color: rgb(109 193 253 / 0.5);
+  /* Отодвиньте заднюю стенку и поверните элемент по оси Y на 180 градусов */
+}
